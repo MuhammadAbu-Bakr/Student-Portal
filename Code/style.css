@@ -1,0 +1,22 @@
+header{
+ padding: 10px;
+ background-color: blue;
+ 
+ 
+ color: beige;
+}
+header nav img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 0px;
+    
+}
+header nav {
+    display: flex;
+}
+header nav li{
+    
+    
+    list-style: none;
+}
