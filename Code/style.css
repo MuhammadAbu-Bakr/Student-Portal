@@ -1,6 +1,9 @@
+*{
+    margin: 0px;
+}
 header{
  padding: 10px;
- background-color: blue;
+ background-color: rgb(154, 154, 225);
  
  
  color: beige;
@@ -11,6 +14,7 @@ header nav img{
     border-radius: 50%;
     border: 0px;
     
+    
 }
 header nav {
     display: flex;
@@ -19,4 +23,11 @@ header nav li{
     
     
     list-style: none;
+}
+
+
+footer{
+    text-align: center;
+    background-color: gray;
+    padding: 20px;
 }
