@@ -32,3 +32,47 @@ footer{
     padding: 20px;
     color: white;
 }
+
+.into {
+    height: 100vh;
+    background-image: url(../assets/images/islamabad-campus.jpg)  ;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(246, 248, 246);
+    text-align: center;
+    padding: 20px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+/* .into p{
+    background-color: blue;
+
+} */
+
+button{
+    margin: 20px;
+    background-color: rgb(25, 37, 196);
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+
+}
+button:hover{
+    color: white;
+    background-color:rgb(43, 43, 86);
+}
+.into button a{
+    color: white;
+    text-decoration: none;
+}
