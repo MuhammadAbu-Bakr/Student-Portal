@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="icon" type="image/png" href="../assets/logo/logo.png" >
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href=""><img src="../assets/logo/logo.jpg" alt="University Logo"></a>
+            <a href="Home.html"><img src="../assets/logo/logo.png" alt="University Logo"></a>
+            <h1>COMSATS University Islamabad</h1>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="Profile.html">Profile</a></li>
@@ -18,7 +25,65 @@
             </ul>
         </nav> 
     </header>
-    <main></main>
+    <main >
+        <form action="" class="form" id="form">
+                
+            <label for="">Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+            <br>
+
+            <label for="">Email:</label>
+            <input type="text" placeholder="Enter your Email" >
+            <br>
+
+            <label for="">Registration Number:</label>
+            <input type="text" placeholder="eg : FA23-BCS-051" required>
+            <br>
+
+            <label for="">Password:</label>
+            <input type="password" placeholder="Enter Password" minlength="8" required>
+            <br>
+
+            <label for="">Confirm:</label>
+            <input type="password" placeholder="Confirm Password" minlength="8" required>
+            <br>
+
+            <label for="">Date of Birth:</label>
+            <input type="date" placeholder="Date of Birth" required>
+            <br>
+            
+            <label for="">Gender:</label>
+            <label for=""> <input type="radio" name="gender" value="Male" placeholder="gender">Male</label>
+            <label for=""> <input type="radio" name="gender" value="Female" placeholder="gender">Female</label>
+            <br>
+
+            <label for="">Contact:</label>
+            <input type="tel" placeholder="eg : 92XXXXXXXXX" minlength="11" maxlength="11" required>
+            <br>
+            
+            <label for="">Department</label>
+            <select name="" id="" title="Department" required>
+                <option value="">Select Department</option>
+                <option value="">Computer Science</option>
+                <option value="">Engineering</option>
+                <option value="">Mathematics</option>
+                <option value="">Business Administration</option>
+                <option value="">Economics</option>
+            </select>
+            <br>
+
+            <label for="">Semester</label>
+            <input type="number" max="8" min="1"  placeholder="1">
+
+            <label for=""><input type="checkbox" required><a href="https://admissions.comsats.edu.pk/Home/Termsandconditions" target="_blank" rel="noopener" class="termCondition"> I agree to Terms & Conditions</a></label>
+            <br>
+
+            <button type="submit" class="btn" >Submit</button>
+            
+        </form>
+        
+        <div id="notification"></div>
+    </main>
     <footer>
         <p>&copy Copyright COMSATS University Islamabad. All Rights Reserved</p>
         <p>Designed by ITCenter</p>

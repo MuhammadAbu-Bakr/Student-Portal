@@ -2,28 +2,68 @@
     margin: 0px;
 }
 header{
- padding: 10px;
- background-color: rgb(154, 154, 225);
- 
- 
- color: beige;
+    padding: 10px 5%;
+    background-color: #003366;
+    position: sticky;
+    
+    color: rgb(247, 247, 239);
+    top: 0;
+    z-index: 1000;
+    opacity: 0.9;
+}
+
+header h1{
+    padding-left: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 header nav img{
     height: 100px;
     width: 100px;
     border-radius: 50%;
     border: 0px;
+    opacity: 20;
+    object-fit: cover;
 
     
     
 }
 header nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header nav li{
-    
-    
+    gap: 25px;
+    display: flex;
     list-style: none;
+}
+header nav li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    color: beige;
+
+}
+header nav li a:hover{
+    color: aquamarine;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span{
+    width: 25px;
+    height: 3px;
+    background-color: beige;
+    border-radius: 2px;
+    transition: 0.3s;
 }
 
 
@@ -176,4 +216,65 @@ footer{
     flex: 1;
     color: #222;
     padding-left: 50px;
+}
+
+
+/* Registration */
+.form{
+    display: flex;
+    background-color: #fff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+    margin: 60px auto;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    
+}
+.form:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0,0,0.18);
+}
+
+.form input, 
+.form select{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    outline: none;
+
+}
+
+.form label{
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+   
+.form input:focus, 
+.form select:focus{
+    border-color: #4a63e7;
+    box-shadow: 0 0 0 3px rgba(74, 99, 231, 0.2);
+}
+
+.form input[type="radio"],
+.form input[type="checkbox"]{
+    width: auto;
+    margin-right: 6px;
+}
+
+.termCondition{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.termCondition:hover{
+    color: #4a63e7;
 }
