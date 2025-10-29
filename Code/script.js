@@ -23,3 +23,22 @@ const loadStudent = () => {
 const saveStudent = (studentObj) => {
   localStorage.setItem("studentProfile", JSON.stringify(studentObj));
 };
+// registreation page
+if (document.getElementById("form")) {
+  document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const student = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      regno: document.getElementById("regno").value,
+      dob: document.getElementById("dob").value,
+      department: document.getElementById("department").value,
+      semester: document.getElementById("semester").value,
+    };
+    saveStudent(student);
+    alert("✅ Registration Successful!");
+    window.location.href = "Profile.html";
+  });
+}
+
+

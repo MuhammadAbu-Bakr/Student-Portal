@@ -257,8 +257,7 @@ footer{
     box-shadow: 0 10px 25px rgba(0, 0,0,0.18);
 }
 
-.form input, 
-.form select{
+.form input, .form select{
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 6px;
@@ -281,8 +280,7 @@ footer{
     box-shadow: 0 0 0 3px rgba(74, 99, 231, 0.2);
 }
 
-.form input[type="radio"],
-.form input[type="checkbox"]{
+.form input[type="radio"], .form input[type="checkbox"]{
     width: auto;
     margin-right: 6px;
 }
