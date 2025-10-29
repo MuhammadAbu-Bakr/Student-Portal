@@ -278,3 +278,41 @@ footer{
 .termCondition:hover{
     color: #4a63e7;
 }
+.form h2{
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #555;
+    text-align: center;
+}
+
+
+/* profile */
+
+.profile{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f2;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+
+}
+.prosection{
+    background: white;
+    padding: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 380px;
+}
+.prosection h2{
+    text-align: center;
+    color: #2e3b9f;
+
+}
+.info{
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.info strong{
+ color: #333;
+}
