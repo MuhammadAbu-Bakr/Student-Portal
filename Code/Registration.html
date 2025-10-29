@@ -30,15 +30,15 @@
             <h2>Student Registration</h2>
                 
             <label for="">Name:</label>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" id="name" placeholder="Enter your name" required>
             <br>
 
             <label for="">Email:</label>
-            <input type="text" placeholder="Enter your Email" >
+            <input type="email" id="email" placeholder="Enter your Email" required>
             <br>
 
             <label for="">Registration Number:</label>
-            <input type="text" placeholder="eg : FA23-BCS-051" required>
+            <input type="text" id="regno" placeholder="eg : FA23-BCS-051" required>
             <br>
 
             <label for="">Password:</label>
@@ -50,7 +50,7 @@
             <br>
 
             <label for="">Date of Birth:</label>
-            <input type="date" placeholder="Date of Birth" required>
+            <input type="date" id="dob" placeholder="Date of Birth" required>
             <br>
             
             <label for="">Gender:</label>
@@ -63,18 +63,18 @@
             <br>
             
             <label for="">Department</label>
-            <select name="" id="" title="Department" required>
+            <select name="" id="department" title="Department" required>
                 <option value="">Select Department</option>
-                <option value="">Computer Science</option>
-                <option value="">Engineering</option>
-                <option value="">Mathematics</option>
-                <option value="">Business Administration</option>
-                <option value="">Economics</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Business Administration">Business Administration</option>
+                <option value="Economics">Economics</option>
             </select>
             <br>
 
-            <label for="">Semester</label>
-            <input type="number" max="8" min="1"  placeholder="1">
+            <label for="" >Semester</label>
+            <input type="number" max="8" min="1" id="semester"  placeholder="Semester (1-8)">
 
             <label for=""><input type="checkbox" required><a href="https://admissions.comsats.edu.pk/Home/Termsandconditions" target="_blank" rel="noopener" class="termCondition"> I agree to Terms & Conditions</a></label>
             <br>
