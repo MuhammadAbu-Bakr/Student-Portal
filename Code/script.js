@@ -53,14 +53,14 @@ if (document.getElementById("profileInfo")) {
     window.location.href = "Registration.html";
   } else {
     const studentTable = `
-      <table class="profile-table">
-        <tr><th colspan="2">Student Details</th>
-        <tr><td><strong>Name :</strong></td><td>${student.name}</td></tr>
-        <tr><td><strong>Email :</strong></td><td>${student.email}</td></tr>
-        <tr><td><strong>Reg No :</strong></td><td>${student.regno}</td></tr>
-        <tr><td><strong>Date of Birth :</strong></td><td>${student.dob}</td></tr>
-        <tr><td><strong>Department :</strong></td><td>${student.department}</td></tr>
-        <tr><td><strong>Semester :</strong></td><td>${student.semester}</td></tr>
+      <table class="profile-table"></tr>
+        <tr><th colspan="2"> Student Details</th>
+        <tr class="even"><td><strong> Name :</strong></td><td>${student.name}</td></tr>
+        <tr><td><strong> Email :</strong></td><td>${student.email}</td></tr>
+        <tr class="even"><td><strong> Reg No :</strong></td><td>${student.regno}</td></tr>
+        <tr><td><strong> Date of Birth :</strong></td><td>${student.dob}</td></tr>
+        <tr class="even"><td><strong> Department :</strong></td><td>${student.department}</td></tr>
+        <tr><td><strong> Semester :</strong></td><td>${student.semester}</td></tr>
       </table>
     `;
     document.getElementById("profileInfo").innerHTML = studentTable;

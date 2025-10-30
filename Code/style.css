@@ -86,23 +86,7 @@ footer{
     margin-right: 30px;
     margin-left: 30px;
 }
-/* .into p{
-    background-color: blue;
 
-} */
-
-/* button{
-    margin: 20px;
-    background-color: rgb(25, 37, 196);
-    cursor: pointer;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-
-
-} */
 .btn{
     margin: 30px;
     background-color: rgb(25, 37, 196);
