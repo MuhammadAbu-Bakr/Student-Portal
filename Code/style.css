@@ -370,5 +370,13 @@ footer{
    gap: 20px;
    justify-items: center;
    justify-items: stretch;
+   
 }
 
+.time{
+    margin: 40px auto;
+    padding: 25px 20px;
+    max-width: 500px;
+    
+
+}

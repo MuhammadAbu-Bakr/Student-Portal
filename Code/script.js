@@ -72,3 +72,18 @@ if (document.getElementById("profileInfo")) {
     window.location.href = "Registration.html";
   });
 }
+
+
+//time
+if (document.getElementById("time-display")) {
+  const display =document.getElementById("time-display");
+  function updateTime(){
+    const now =new Date();
+    display.textContent =now.toLocaleString();
+    
+  }
+  updateTime();
+  setInterval(updateTime, 1000);
+  
+  
+}
