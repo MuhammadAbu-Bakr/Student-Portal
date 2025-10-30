@@ -41,4 +41,33 @@ if (document.getElementById("form")) {
   });
 }
 
+//prfile logic
 
+
+if (document.getElementById("profileInfo")) {
+  const student = loadStudent();
+
+  
+  if (!student) {
+    alert("❌ Please register first!");
+    window.location.href = "Registration.html";
+  } else {
+
+    const studentInfo = `
+      <p><strong>Name:</strong> ${student.name}</p>
+      <p><strong>Email:</strong> ${student.email}</p>
+      <p><strong>Reg No:</strong> ${student.regno}</p>
+      <p><strong>Date of Birth:</strong> ${student.dob}</p>
+      <p><strong>Department:</strong> ${student.department}</p>
+      <p><strong>Semester:</strong> ${student.semester}</p>
+    `;
+    document.getElementById("profileInfo").innerHTML = studentInfo;
+  }
+
+
+  document.getElementById("logoutBtn").addEventListener("click", () => {
+    removeStudent();
+    alert("👋 You have been logged out.");
+    window.location.href = "Registration.html";
+  });
+}
