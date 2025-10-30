@@ -1,32 +1,33 @@
-document.getElementById("form").addEventListener('submit',function(e){
-    e.preventDefault(); 
-    const msg =document.getElementById("notification"); 
-    msg.style.color="green"; msg.style.marginTop="15px"; msg.style.fontWeight="bold";
-    msg.textContent ="✅ Registration Successful!" 
-    })
-const removeStudent = () => {
-  localStorage.removeItem("studentProfile");
+// document.getElementById("form").addEventListener('submit',function(e){
+//     e.preventDefault(); 
+//     const msg =document.getElementById("notification"); 
+//     msg.style.color="green"; msg.style.marginTop="15px"; msg.style.fontWeight="bold";
+//     msg.textContent ="✅ Registration Successful!" 
+//     })
+// const removeStudent = () => {
+//   localStorage.removeItem("studentProfile");
+// };
+
+
+const saveStudent = (studentObj) => {
+  localStorage.setItem("studentProfile", JSON.stringify(studentObj));
 };
-
-
-
 
 const loadStudent = () => {
   const data = localStorage.getItem("studentProfile");
   return data ? JSON.parse(data) : null;
 };
 
-
-
-
-
-const saveStudent = (studentObj) => {
-  localStorage.setItem("studentProfile", JSON.stringify(studentObj));
+const removeStudent = () => {
+  localStorage.removeItem("studentProfile");
 };
-// registreation page
+
+//registeration
+
 if (document.getElementById("form")) {
   document.getElementById("form").addEventListener("submit", function (e) {
     e.preventDefault();
+
     const student = {
       name: document.getElementById("name").value,
       email: document.getElementById("email").value,
@@ -35,35 +36,35 @@ if (document.getElementById("form")) {
       department: document.getElementById("department").value,
       semester: document.getElementById("semester").value,
     };
+
     saveStudent(student);
     alert("✅ Registration Successful!");
     window.location.href = "Profile.html";
   });
 }
 
-//prfile logic
-
+//profile
 
 if (document.getElementById("profileInfo")) {
   const student = loadStudent();
 
-  
   if (!student) {
     alert("❌ Please register first!");
     window.location.href = "Registration.html";
   } else {
-
-    const studentInfo = `
-      <p><strong>Name:</strong> ${student.name}</p>
-      <p><strong>Email:</strong> ${student.email}</p>
-      <p><strong>Reg No:</strong> ${student.regno}</p>
-      <p><strong>Date of Birth:</strong> ${student.dob}</p>
-      <p><strong>Department:</strong> ${student.department}</p>
-      <p><strong>Semester:</strong> ${student.semester}</p>
+    const studentTable = `
+      <table class="profile-table">
+        <tr><th colspan="2">Student Details</th>
+        <tr><td><strong>Name :</strong></td><td>${student.name}</td></tr>
+        <tr><td><strong>Email :</strong></td><td>${student.email}</td></tr>
+        <tr><td><strong>Reg No :</strong></td><td>${student.regno}</td></tr>
+        <tr><td><strong>Date of Birth :</strong></td><td>${student.dob}</td></tr>
+        <tr><td><strong>Department :</strong></td><td>${student.department}</td></tr>
+        <tr><td><strong>Semester :</strong></td><td>${student.semester}</td></tr>
+      </table>
     `;
-    document.getElementById("profileInfo").innerHTML = studentInfo;
+    document.getElementById("profileInfo").innerHTML = studentTable;
   }
-
 
   document.getElementById("logoutBtn").addEventListener("click", () => {
     removeStudent();

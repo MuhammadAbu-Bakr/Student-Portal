@@ -58,20 +58,7 @@ header nav li a:hover{
     color: aquamarine;
 }
 
-.hamburger{
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 6px;
-}
 
-.hamburger span{
-    width: 25px;
-    height: 3px;
-    background-color: beige;
-    border-radius: 2px;
-    transition: 0.3s;
-}
 
 
 footer{
